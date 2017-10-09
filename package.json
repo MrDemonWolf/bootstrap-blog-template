@@ -1,0 +1,25 @@
+{
+  "name": "jekyllrb-bootstrap-blog-template",
+  "version": "1.0.0",
+  "description": "jekyllrb-bootstrap-blog-template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demonwolfdev/jekyllrb-bootstrap-blog-template.git"
+  },
+  "author": "MrDemonWolf",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/demonwolfdev/jekyllrb-bootstrap-blog-template/issues"
+  },
+  "devDependencies": {
+    "bowser": "^1.7.1",
+    "browser-sync": "^1.3.7",
+    "gulp": "^3.8.8",
+    "gulp-js-minify": "0.0.3",
+    "gulp-sass": "^2.1.0"
+  }
+}
