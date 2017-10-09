@@ -1,0 +1,7 @@
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+include: ["_includes/", "lib/"]
+exclude: ["gulpfile.js", "package.json", "README.md", "CONFIG.md","node_modules", "bower.json"]
