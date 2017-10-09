@@ -1,0 +1,44 @@
+#-------------------------------
+# General Site Settings
+
+title: Bootstrap Blog
+name: MrDemonWolf
+description:
+email: webmaster@example.com
+
+#-------------------------------
+# Website URL Section
+
+# url: https://example.com
+url: http://localhost:3000  #Dev URL
+
+#-------------------------------
+# Menu Section
+
+menu:
+- {title: Home, url: '#'}
+
+#-------------------------------
+# SEO Section
+
+seo:
+  twitter-creator: 'https://www.twitter.com/mrdemonwolf'
+  twitter-site: 'https://www.twitter.com/example'
+  type: 'website'
+
+#-------------------------------
+# Social Icons and URls
+
+social:
+- {icon: 'fa-spotify', color: 'spotify-color', url: 'https://open.spotify.com/user/example/'}
+- {icon: 'fa-twitter', color: 'twitter-color', url: 'http://www.twitter.com/example'}
+- {icon: 'fa-github', color: 'github-color', url: 'https://www.github.com/example'}
+- {icon: 'fa-youtube', color: 'youtube-color', url: 'https://www.youtube.com/example'}
+- {icon: 'fa-twitch', color: 'twitch-color', url: 'https://www.twitch.tv/example/'}
+
+#-------------------------------
+# Modified Date
+
+modified-date: September 25, 2017
+
+#-------------------------------
