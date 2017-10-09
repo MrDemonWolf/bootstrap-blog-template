@@ -6,6 +6,7 @@ name: MrDemonWolf
 description:
 email: webmaster@example.com
 google-font: family=Montserrat:400,700
+
 #-------------------------------
 # Website URL Section
 
@@ -28,16 +29,14 @@ seo:
 
 #-------------------------------
 # Social Icons and URls
-
+# Vald social media accounts are twitter , twitch , youtube , google-plus , facebook .
 social:
-- {icon: 'fa-spotify', color: 'spotify-color', url: 'https://open.spotify.com/user/example/'}
 - {icon: 'fa-twitter', color: 'twitter-color', url: 'http://www.twitter.com/example'}
-- {icon: 'fa-github', color: 'github-color', url: 'https://www.github.com/example'}
 - {icon: 'fa-youtube', color: 'youtube-color', url: 'https://www.youtube.com/example'}
 - {icon: 'fa-twitch', color: 'twitch-color', url: 'https://www.twitch.tv/example/'}
 
 #-------------------------------
-# Modified Date
+# Modified Date for legal
 
 modified-date: September 25, 2017
 
