@@ -105,21 +105,9 @@
 
 .twitch-color:hover { color: #4e3380; transition: all 3s; -webkit-transition: all 3s; -moz-transition: all 3s; }
 
-.github-color { color: #333; }
-
-.github-color:hover { color: #1a1a1a; transition: all 3s; -webkit-transition: all 3s; -moz-transition: all 3s; }
-
 .facebook-color { color: #3b5998; }
 
 .facebook-color:hover { color: #2d4373; transition: all 3s; -webkit-transition: all 3s; -moz-transition: all 3s; }
-
-.spotify-color { color: #1db954; }
-
-.spotify-color:hover { color: #168d40; transition: all 3s; -webkit-transition: all 3s; -moz-transition: all 3s; }
-
-.behance-color { color: #1769ff; }
-
-.behance-color:hover { color: #0050e3; transition: all 3s; -webkit-transition: all 3s; -moz-transition: all 3s; }
 
 /* Background */
 .twitter-color_background { background-color: #1da1f2; }
@@ -138,21 +126,9 @@
 
 .twitch-color_background:hover { background-color: #4e3380; }
 
-.github-color_background { background-color: #333; }
-
-.github-color_background:hover { background-color: #1a1a1a; }
-
 .facebook-color_background { background-color: #3b5998; }
 
 .facebook-color_background:hover { background-color: #2d4373; }
-
-.spotify-color_background { background-color: #1db954; }
-
-.spotify-color_background:hover { background-color: #168d40; }
-
-.behance-color_background { background-color: #1769ff; }
-
-.behance-color_background:hover { background-color: #0050e3; }
 
 html, body { height: 100%; /* The html and body elements cannot have any padding or margin. */ }
 
@@ -177,3 +153,13 @@ html, body { height: 100%; /* The html and body elements cannot have any padding
 .row-centered { text-align: center; }
 
 .col-centered { margin: 0 auto; float: none; }
+
+#search-container { max-width: 40em; padding: 1em; margin: 1em auto; border: 1px solid lightgrey; }
+
+#search-input { display: inline-block; padding: .5em; width: 100%; font-size: 0.8em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.page-content .main { float: left; }
+
+.page-content .sidebar { float: right; }
+
+#landing { padding-top: 75px; }
