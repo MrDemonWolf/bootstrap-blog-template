@@ -1,0 +1,13 @@
+<div class="landing-posts">
+
+  {% for post in site.posts %}
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.excerpt }}</p>
+  <div>
+    <span class="badge">{{post.date | date: "%m/%d/%y"}}</span>
+      <div class="pull-right"> {% for item in post.tags %}
+        <span class="label label-default">{{ post.tags }}</span>{% endfor %}
+      </div>
+  </div>
+  {% endfor %}
+</div>

@@ -56,3 +56,32 @@ body {
     margin: 0 auto;
     float: none;
 }
+
+
+      #search-container {
+        max-width: 40em;
+        padding: 1em;
+        margin: 1em auto;
+        border: 1px solid lightgrey;
+      }
+      #search-input {
+        display: inline-block;
+        padding: .5em;
+        width: 100%;
+        font-size: 0.8em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+.page-content {
+  .main{
+  float:left;
+  }
+  .sidebar{
+    float:right;
+  }
+}
+#landing {
+  padding-top: 75px;
+}
