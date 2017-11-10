@@ -1,25 +1,55 @@
 {
-  "name": "jekyllrb-bootstrap-blog-template",
+  "name": "jekyllb-boilerplate",
   "version": "1.0.0",
-  "description": "jekyllrb-bootstrap-blog-template",
+  "description": "jekyllb-boilerplato",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "bundle install",
+    "start": "gulp",
+    "test": "gulp test",
+    "build": "gulp build --production",
+    "imagemin": "gulp imagemin",
+    "production": "gulp --production",
+    "sass": "gulp sass",
+    "server": "gulp server",
+    "server-production": "gulp server --production"
+  },
+  "author": "MrDemonWolf",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "browser-sync": "^2.18.13",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-newer": "^1.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^4.0.0",
+    "yargs": "^9.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/demonwolfdev/jekyllrb-bootstrap-blog-template.git"
+    "url": "https://github.com/MrDemonWolf/jekyllb-boilerplate.git"
   },
-  "author": "MrDemonWolf",
-  "license": "BSD-2-Clause",
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync",
+    "Autoprefixer",
+    "PostCSS",
+    "Webpack"
+  ],
   "bugs": {
-    "url": "https://github.com/demonwolfdev/jekyllrb-bootstrap-blog-template/issues"
+    "url": "https://github.com/MrDemonWolf/jekyllb-boilerplate/issues"
   },
-  "devDependencies": {
-    "bowser": "^1.7.1",
-    "browser-sync": "^1.3.7",
-    "gulp": "^3.8.8",
-    "gulp-js-minify": "0.0.3",
-    "gulp-sass": "^2.1.0"
-  }
+  "homepage": "https://github.com/MrDemonWolf/jekyllb-boilerplate",
+  "dependencies": {}
 }
