@@ -1,18 +1,5 @@
 #-------------------------------
 # General Site Settings
-
-title: Bootstrap Blog
-name: MrDemonWolf
-description:
-email: webmaster@example.com
-google-font: family=Montserrat:400,700
-
-#-------------------------------
-# Website URL Section
-
-# url: https://example.com
-url: http://localhost:3000  #Dev URL
-
 #-------------------------------
 # Menu Section
 
@@ -20,23 +7,31 @@ menu:
 - {title: Home, url: '#'}
 
 #-------------------------------
+# Disqus Section
+# Must have comments: true to enable comments on post.
+
+disqus-username:
+
+#-------------------------------
 # SEO Section
 
 seo:
-  twitter-creator: 'https://www.twitter.com/mrdemonwolf'
-  twitter-site: 'https://www.twitter.com/example'
+  twitter-creator: '@example'
+  twitter-site: '@example'
   type: 'website'
+  google-analytics: UA-xxxx-1
 
 #-------------------------------
 # Social Icons and URls
-# Vald social media accounts are twitter , twitch , youtube , google-plus , facebook .
+
 social:
-- {icon: 'fa-twitter', color: 'twitter-color', url: 'http://www.twitter.com/example'}
-- {icon: 'fa-youtube', color: 'youtube-color', url: 'https://www.youtube.com/example'}
-- {icon: 'fa-twitch', color: 'twitch-color', url: 'https://www.twitch.tv/example/'}
+- {icon: 'fa-spotify', color: 'spotify-color', url: 'https://example.com'}
+
+social-url:
+  spotify: https://example.com
 
 #-------------------------------
-# Modified Date for legal
+# Modified Date
 
 modified-date: September 25, 2017
 

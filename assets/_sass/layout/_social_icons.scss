@@ -1,3 +1,6 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the social icons of the site/application.
+// -----------------------------------------------------------------------------
 .twitter-color {
 	color: $twitter-color;
 	&:hover {
@@ -34,10 +37,37 @@
 		-moz-transition: all 3s;
 	}
 }
+.github-color {
+	color: $github-color;
+	&:hover {
+		color: darken($github-color, 10%);
+		transition: all 3s;
+		-webkit-transition: all 3s;
+		-moz-transition: all 3s;
+	}
+}
 .facebook-color {
 	color: $facebook-color;
 	&:hover {
 		color: darken($facebook-color, 10%);
+		transition: all 3s;
+		-webkit-transition: all 3s;
+		-moz-transition: all 3s;
+	}
+}
+.spotify-color {
+	color: $spotify-color;
+	&:hover {
+		color: darken($spotify-color, 10%);
+		transition: all 3s;
+		-webkit-transition: all 3s;
+		-moz-transition: all 3s;
+	}
+}
+.behance-color {
+	color: $behance-color;
+	&:hover {
+		color: darken($behance-color, 10%);
 		transition: all 3s;
 		-webkit-transition: all 3s;
 		-moz-transition: all 3s;
@@ -69,9 +99,27 @@
 		background-color: darken($twitch-color, 10%);
 	}
 }
+.github-color_background {
+	background-color: $github-color;
+	&:hover {
+		background-color: darken($github-color, 10%);
+	}
+}
 .facebook-color_background {
 	background-color: $facebook-color;
 	&:hover {
 		background-color: darken($facebook-color, 10%);
+	}
+}
+.spotify-color_background {
+	background-color: $spotify-color;
+	&:hover {
+		background-color: darken($spotify-color, 10%);
+	}
+}
+.behance-color_background {
+	background-color: $behance-color;
+	&:hover {
+		background-color: darken($behance-color, 10%);
 	}
 }
