@@ -1,87 +1,35 @@
-@import "_partials/mixins";
-@import "_partials/typography";
-@import "_partials/variables";
-@import "_global/nav";
-@import "_global/footer";
-@import "_global/social_icons";
+@charset 'UTF-8';
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
+// 2. Vender
+//
 
-/* Set the fixed height of the footer here */
-#footer {
-  height: 100px;
-}
-@media (max-width: 768px) {
-  #footer {
-    height: 140px;
-  }
-}
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
 
-// Custom spaceings
-.big-content-top {
-	padding-top: 30px;
-}
-.big-content-bottom {
-	padding-bottom: 30px;
-}
-.small-content-top {
-	padding-top: 10px;
-}
-.small-content-bottom {
-	padding-bottom: 10px;
-}
-.page-header_center {
-  text-align: center;
-}
-// Center Row
-.row-centered {
-    text-align:center;
-}
-// Center Col
-.col-centered {
-    margin: 0 auto;
-    float: none;
-}
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer',
+  'layout/social_icons';
 
+// 5. Components
+@import
+  'components/blank';
 
-      #search-container {
-        max-width: 40em;
-        padding: 1em;
-        margin: 1em auto;
-        border: 1px solid lightgrey;
-      }
-      #search-input {
-        display: inline-block;
-        padding: .5em;
-        width: 100%;
-        font-size: 0.8em;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-      }
+// 6. Page-specific styles
+@import
+  'pages/legal';
 
-.page-content {
-  .main{
-  float:left;
-  }
-  .sidebar{
-    float:right;
-  }
-}
-#landing {
-  padding-top: 75px;
-}
+// 7. Themes
+@import
+  'themes/default';
