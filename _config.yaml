@@ -27,7 +27,7 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - demonwolf.config.js
+  - mrdemonwolf.config.js
   - gulpfile.js
   - LICENSE
   - node_modules
@@ -35,4 +35,4 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
-  - lib
+  - Config.MD

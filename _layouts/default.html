@@ -53,8 +53,10 @@
   <!--Bootstrap -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/bootstrap/css/bootstrap.min.css">
   <!-- EU Cookie -->
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/cookieconsent/css/cookieconsent.min.css">
-  <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/lib/cookieconsent/js/cookieconsent.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/cookieconsent/css/cookieconsent.min.css">
+  <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/lib/cookieconsent/js/cookieconsent.min.js"></script> -->
+  <!-- Simple Jekyll Serach -->
+  <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/lib/simple-jekyll-search/js/simple-jekyll-search.min.js"></script>
   <!-- Custom -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css">
   <!-- Google Analytics -->
@@ -111,6 +113,13 @@
     })
   });
 
+</script>
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.url }}{{ site.baseurl }}/search.json'
+  })
 </script>
 <!-- Footer -->
 <div id="footer">
