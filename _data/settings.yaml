@@ -10,7 +10,7 @@ menu:
 # Disqus Section
 # Must have comments: true to enable comments on post.
 
-disqus-username:
+disqus: mrdemonwolf-local
 
 #-------------------------------
 # SEO Section
