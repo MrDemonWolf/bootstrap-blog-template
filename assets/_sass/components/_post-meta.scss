@@ -12,3 +12,15 @@
         display: inline;
     }
 }
+
+.post-tags {
+    display: inline;
+    a {
+        color: $label-tag-text;
+        text-decoration: none;
+
+        &:hover {
+            color: $label-tag-text_hover;
+        }
+    }
+}

@@ -2,12 +2,11 @@
 layout: default
 title: Tags
 ---
-<!-- {% include nav_page.html %} -->
 <div class="container">
   <div class="col-md-12">
     {% for tag in site.tags %}
     <div class="tags">
-      <span class="label label-tags">
+      <span class="">
         <a href="{{ site.url }}{{ site.baseurl}}/{{ tag[0] }}">{{ tag[0] }}</a>
       </span>
     </div>
