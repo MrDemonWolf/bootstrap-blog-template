@@ -22,8 +22,11 @@ github_username: mrdemonwolf
 
 # Build settings
 markdown: kramdown
+permalink: pretty # Enabled pretty urls /test/ other then test.html
+
 plugins:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock

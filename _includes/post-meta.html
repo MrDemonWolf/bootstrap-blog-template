@@ -3,12 +3,14 @@
     <i class="fa fa-calendar"></i>
     <time datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%b %d, %Y" }}</time>
   </div>
+  {%if post.comments %}
   <div class="col-md-3">
     <i class="fa fa-comments"></i>
     <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread">
       <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ site.baseurl }}{{ post.url}}">First article</span>
     </a>
   </div>
+  {% endif %}
   <div class="col-md-3">
     <i class="fa fa-clock-o"></i>
     <div class="read-time">
