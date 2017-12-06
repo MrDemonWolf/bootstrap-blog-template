@@ -13,21 +13,26 @@
 # you will see them access via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the template via {{ site.myvariable }}.
-title: "MrDemonWolf Boilerplate"
+title: "Bootstrap Jekyll Blog"
 email: your-email@domain.com
-description: Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Browserify, Imagemin, Browsersync, PostCSS etc.
+description: Quick starter project for Jekyll blog based on bootstrap
+keywords:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: mrdemonwolf
+brand-color: '#00328d'
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
 plugins:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
-  - demonwolf.config.js
+  - mrdemonwolf.config.js
   - gulpfile.js
   - LICENSE
   - node_modules
@@ -35,4 +40,4 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
-  - lib
+  - Config.MD

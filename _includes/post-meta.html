@@ -5,7 +5,9 @@
   </div>
   <div class="col-md-3">
     <i class="fa fa-comments"></i>
-    <a href="https://sgeos.github.io{{ post.url }}#disqus_thread">0 Comments</a>
+    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread">
+      <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ site.baseurl }}{{ post.url}}">First article</span>
+    </a>
   </div>
   <div class="col-md-3">
     <i class="fa fa-clock-o"></i>
@@ -17,7 +19,7 @@
   <div class="col-md-3">
     <i class="fa fa-tags">
       {% for tag in post.tags %}
-      <a href="{{ site.url }}{{ site.baseurl }}/tags/{{{{ tag | uri_escape }}"></a>
+      <a href="{{ site.url }}{{ site.baseurl }}/tags/{{ tag | uri_escape }}">{{ tag }}</a>
       {% endfor %}
     </i>
   </div>
