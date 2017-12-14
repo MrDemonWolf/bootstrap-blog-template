@@ -26,11 +26,13 @@
 @import
   'components/post-meta',
   'components/tags',
-  'components/blank';
+  'components/blank',
+  'components/hero';
 
 // 6. Page-specific styles
 @import
-  'pages/legal';
+  'pages/legal',
+  'pages/landing';
 
 // 7. Themes
 @import

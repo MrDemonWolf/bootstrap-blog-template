@@ -129,20 +129,218 @@
     }
 }
 
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .nav-dropdown-menu {
-        > li > a {
-            color: $nav-colDefault;
+// Scroll
+.navbar-scroll {
+    background-color: $nav-bgScroll;
+    border-color: $brand-color;
+    transition: all 700ms;
 
-            &:hover, &:focus {
-                color: $nav-colHighlight;
+    .navbar-brand {
+        color: $nav-colScroll;
+
+        &:hover, &:focus {
+            color: $nav-colScroll-Hightlight;
+        }
+    }
+
+    .navbar-text {
+        color: $nav-colScroll;
+    }
+
+    .navbar-nav {
+        > li {
+            > a {
+                color: $nav-colScroll;
+                line-height: 35px;
+
+                &:hover, &:focus {
+                    color: $nav-colScroll-Hightlight;
+                }
+            }
+
+            @if $nav-dropdown {
+                > .nav-dropdown-menu {
+                    background-color: $nav-bgDefault;
+
+                    > li {
+                        > a {
+                            color: $nav-colScroll;
+
+                            &:hover, &:focus {
+                                color: $nav-colScroll-Hightlight;
+                                background-color: $nav-bgHighlight;
+                            }
+                        }
+
+                        &.divider {
+                            background-color: $nav-bgHighlight;
+                        }
+                    }
+                }
+            }
+        }
+
+        @if $nav-dropdown {
+            .open .nav-dropdown-menu > .active {
+                > a, > a:hover, > a:focus {
+                    color: $nav-colScroll-Hightlight;
+                    background-color: $nav-bgHighlight;
+                }
             }
         }
 
         > .active {
             > a, > a:hover, > a:focus {
-                color: $nav-colHighlight;
+                color: $nav-colScroll-Hightlight;
                 background-color: $nav-bgHighlight;
+            }
+        }
+
+        > .open {
+            > a, > a:hover, > a:focus {
+                color: $nav-colScroll-Hightlight;
+                background-color: $nav-bgHighlight;
+            }
+        }
+    }
+
+    .navbar-toggle {
+        border-color: $nav-bgHighlight;
+
+        &:hover, &:focus {
+            background-color: $nav-bgHighlight;
+        }
+
+        .icon-bar {
+            background-color: $nav-colScroll;
+        }
+    }
+
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $nav-colScroll;
+    }
+
+    .navbar-link {
+        color: $nav-colScroll;
+
+        &:hover {
+            color: $nav-colScroll-Hightlight;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default {
+        background-color: $nav-bgScroll;
+        border-color: $nav-bgScroll-Hightlight;
+
+        .navbar-brand {
+            color: $nav-colScroll;
+
+            &:hover, &:focus {
+                color: $nav-colScroll-Hightlight;
+            }
+        }
+
+        .navbar-text {
+            color: $nav-colScroll;
+        }
+
+        .navbar-nav {
+            > li {
+                > a {
+                    color: $nav-colScroll;
+                    line-height: 35px;
+
+                    &:hover, &:focus {
+                        color: $nav-colScroll-Hightlight;
+                    }
+                }
+
+                @if $nav-dropdown {
+                    > .nav-dropdown-menu {
+                        background-color: $nav-bgDefault;
+
+                        > li {
+                            > a {
+                                color: $nav-colScroll;
+
+                                &:hover, &:focus {
+                                    color: $nav-colScroll-Hightlight;
+                                    background-color: $nav-bgHighlight;
+                                }
+                            }
+
+                            &.divider {
+                                background-color: $nav-bgHighlight;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @if $nav-dropdown {
+                .open .nav-dropdown-menu > .active {
+                    > a, > a:hover, > a:focus {
+                        color: $nav-colScroll-Hightlight;
+                        background-color: $nav-bgHighlight;
+                    }
+                }
+            }
+
+            > .active {
+                > a, > a:hover, > a:focus {
+                    color: $nav-colScroll-Hightlight;
+                    background-color: $nav-bgHighlight;
+                }
+            }
+
+            > .open {
+                > a, > a:hover, > a:focus {
+                    color: $nav-colScroll-Hightlight;
+                    background-color: $nav-bgHighlight;
+                }
+            }
+        }
+
+        .navbar-toggle {
+            border-color: $nav-bgHighlight;
+
+            &:hover, &:focus {
+                background-color: $nav-bgHighlight;
+            }
+
+            .icon-bar {
+                background-color: $nav-colScroll;
+            }
+        }
+
+        .navbar-collapse,
+        .navbar-form {
+            border-color: $nav-colScroll;
+        }
+
+        .navbar-link {
+            color: $nav-colScroll;
+
+            &:hover {
+                color: $nav-colScroll-Hightlight;
+            }
+
+            > li > a {
+                color: $nav-colDefault;
+
+                &:hover, &:focus {
+                    color: $nav-colHighlight;
+                }
+            }
+
+            > .active {
+                > a, > a:hover, > a:focus {
+                    color: $nav-colHighlight;
+                    background-color: $nav-bgHighlight;
+                }
             }
         }
     }
@@ -162,13 +360,14 @@
 }
 
 #navbar-close {
-    color: $nav-colHighlight;
+    color: $nav-colScroll-Hightlight;
     width: 22px;
     height: 14px;
 }
 
 .navbar {
     margin-bottom: 0px;
+
     // border-bottom: 1px solid $brand-color-alt;
 }
 
@@ -182,13 +381,25 @@
     font-size: 1.5em;
 }
 
-.cta {
-    padding: 2px 6px 2px 6px;
-    background-color: #EEEEEE;
-    color: #333333;
-    padding: 2px 6px 2px 6px;
-    border-top: 1px solid #CCCCCC;
-    border-right: 1px solid #333333;
-    border-bottom: 1px solid #333333;
-    border-left: 1px solid #CCCCCC;
+.btn-cta {
+    padding: 8px;
+    color: #ffffff;
+    background: #2d3b46;
+    border: 2px soild transparent;
+    font-family: $main-font;
+    font-size: 1.25em;
+    font-weight: 700;
+
+    &:hover, &:focus {
+        color: #ffffff;
+        background: lighten(#2d3b46, 0.15);
+        transition: all 1s;
+    }
+}
+
+.navbar-btn {
+    line-height: 35px;
+    padding: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

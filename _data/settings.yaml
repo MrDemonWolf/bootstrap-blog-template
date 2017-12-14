@@ -13,6 +13,13 @@ menu:
 disqus: mrdemonwolf-local
 
 #-------------------------------
+# Hero Section
+
+hero:
+  header:
+  sub-header:
+
+#-------------------------------
 # SEO Section
 
 seo:

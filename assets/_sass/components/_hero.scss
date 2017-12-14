@@ -1,0 +1,68 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero component.
+// -----------------------------------------------------------------------------
+.hero {
+    text-align: center;
+    color: white;
+    background: url(../images/hero_bg.png) no-repeat bottom center;
+    background-size: cover;
+    height: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0px;
+    position: relative;
+
+    .body {
+        display: table-cell;
+    }
+
+    .text {
+        color: #ffffff;
+        font-family: $main-font;
+        font-size: 3.15em;
+        display: inline-block;
+        padding-top: 25px;
+    }
+
+    .inner {
+        background-color: transparent !important;
+        padding-top: 58px;
+        padding-bottom: 58px;
+
+        .header {
+            font-family: $main-font;
+            color: #ffffff;
+            font-size: 1em;
+        }
+
+        .sub-header {
+            font-family: $main-font;
+            color: #ffffff;
+            font-size: 0.75em;
+        }
+    }
+}
+
+.illustration {
+    @extend .img-circle;
+
+    width: 250px;
+    height: 250px;
+    top: -60%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    background-color: $illustration-bg;
+}
+
+@media (max-width: 991px) {
+    .illustration {
+        width: 40%;
+        height: 40%;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+// #hero {}
