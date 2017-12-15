@@ -1,18 +1,18 @@
-<div id="landing">
+<div class="landing" id="landing">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
+        {% for post in site.posts limit:4 sort %}
         <div class="landing-posts">
-          {% for post in site.posts %}
-          <h1>{{ post.title }}</h1>
-          <p>{{ post.excerpt }}</p>
+          <a href="{{ site.url}}{{ site.baseurl }}{{ post.url }}">
+            <div class="title">{{ post.title }}</div>
+          </a>
+          <div class="excerpt">{{ post.excerpt }}</div>
           <div class="post-meta">
-            {% include post-meta.html %}
+            {% include landing_post-meta.html %}
           </div>
-          {% endfor %}
         </div>
+        {% endfor %}
       </div>
-      {% include sidebar.html %}
     </div>
   </div>
 </div>
