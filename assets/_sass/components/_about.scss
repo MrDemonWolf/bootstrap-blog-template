@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the about component.
+// -----------------------------------------------------------------------------
+.about {
+    padding-top: 75px;
+
+    .name {}
+
+    .text {}
+
+    .social {
+        text-align: right;
+    }
+
+    .links {
+        text-align: left;
+        a {
+          display: inline-block;
+          padding-top: 10px;
+        }
+    }
+
+    .p-0 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

@@ -20,6 +20,17 @@ hero:
   sub-header:
 
 #-------------------------------
+# About Section
+
+about:
+  name: John Doe
+  text: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
+  # Limit of two links
+  links:
+    - {url: 'https://mrdemonwolf.me', title: My personal site}
+    - {url: 'https://mrdemonwolf.me', title: My personal site}
+
+#-------------------------------
 # SEO Section
 
 seo:
