@@ -5,19 +5,15 @@
 
 menu:
 - {title: Home, url: '#'}
+- {title: Categories, url: '#'}
+- {title: Tags, url: '#'}
+- {title: Contact, url: '#'}
 
 #-------------------------------
 # Disqus Section
 # Must have comments: true to enable comments on post.
 
 disqus: mrdemonwolf-local
-
-#-------------------------------
-# Hero Section
-
-hero:
-  header:
-  sub-header:
 
 #-------------------------------
 # About Section
