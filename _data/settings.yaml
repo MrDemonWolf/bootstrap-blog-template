@@ -5,19 +5,15 @@
 
 menu:
 - {title: Home, url: '#'}
+- {title: Categories, url: '#'}
+- {title: Tags, url: '#'}
+- {title: Contact, url: '#'}
 
 #-------------------------------
 # Disqus Section
 # Must have comments: true to enable comments on post.
 
 disqus: mrdemonwolf-local
-
-#-------------------------------
-# Hero Section
-
-hero:
-  header:
-  sub-header:
 
 #-------------------------------
 # About Section
@@ -41,7 +37,7 @@ seo:
 
 #-------------------------------
 # Social Icons and URls
-
+# Icons supported are Twitter, Twitch, Spotify, Github, YouTube, Linkin, and Google Plus
 social:
 - {icon: 'fa-spotify', color: 'spotify-color', url: 'https://example.com'}
 
