@@ -35,3 +35,15 @@
         padding-right: 0px;
     }
 }
+
+.social-icon-about {
+    @extend .social-icon;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 8px;
+    border-radius: 50%;
+}
