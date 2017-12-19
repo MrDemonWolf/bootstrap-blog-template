@@ -4,4 +4,3 @@ npm-debug.log*
 _site/
 Gemfile.lock
 package-lock.json
-/_config_development.yaml
