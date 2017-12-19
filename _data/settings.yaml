@@ -5,9 +5,9 @@
 
 menu:
 - {title: Home, url: '#'}
-- {title: Categories, url: '#'}
-- {title: Tags, url: '#'}
-- {title: Contact, url: '#'}
+- {title: Categories, url: 'categories'}
+- {title: Tags, url: 'tags'}
+- {title: Contact, url: '#contact'}
 
 #-------------------------------
 # Disqus Section
