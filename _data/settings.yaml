@@ -39,11 +39,10 @@ seo:
 # Social Icons and URls
 # Icons supported are Twitter, Twitch, Spotify, Github, YouTube, Linkin, and Google Plus
 social:
-- {icon: 'fa-spotify', color: 'spotify-color', url: 'https://www.spotify.com'}
-- {icon: 'fa-twitter', color: 'spotify-color', url: 'https://www.spotify.com'}
-
-social-url:
-  spotify: https://example.com
+- {name: , icon: 'fa-twitter', color: 'twitter-color', url: 'https://www.twitter.com'}
+- {name: , icon: 'fa-twitch', color: 'twitch-color', url: 'https://www.twitch.tv'}
+- {name: , icon: 'fa-spotify', color: 'spotify-color', url: 'https://www.spotify.com'}
+- {name: , icon: 'fa-github', color: 'github-color', url: 'https://www.github.com'}
 
 #-------------------------------
 # Modified Date

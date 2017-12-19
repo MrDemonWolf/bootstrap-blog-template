@@ -47,3 +47,14 @@
     padding-top: 8px;
     border-radius: 50%;
 }
+@media (max-width: 991px) {
+  .about {
+    .social {
+      text-align: center;
+
+    }
+    .links {
+      text-align: center;
+    }
+  }
+}

@@ -81,8 +81,8 @@
       "name": "{{ site.title}}",
       "mainEntityOfPage": "{{ site.url }}{{ site.baseurl }}/",
       "url": "{{ site.url }}{{ site.baseurl }}/",
-      "sameAs": [
-        "{{ site.data.setttings.social-url.spotify}}"
+      "sameAs": [{% for item in site.data.settings.social %}
+      "{{ item.url }}"{% if forloop.last == false %},{% endif %}{% endfor %}
       ],
       "email": "{{ site.email }}",
       "logo": "{{ site.url }}{{ site.baseurl }}/assets/logos/logo.png"

@@ -4,7 +4,7 @@
 .page_header {
     text-align: center;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     background-size: cover;
     height: 100%;
     padding-top: 8px;
@@ -21,8 +21,8 @@
 
     .inner {
         background-color: transparent !important;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 75px;
+        padding-bottom: 75px;
 
         .header {
             font-family: $main-font;
