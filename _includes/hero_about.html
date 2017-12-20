@@ -11,10 +11,14 @@
     <div class="col-centered">
       <div class="col-md-6 p-0">
         <div class="social">
-          {% for item in site.data.settings.social %}
-          <a href="{{ item.url }}">
-            <i class="fa {{ item.icon }} social-icon-about {{ item.color }}" aria-hidden="true"></i>
-          </a>{% endfor %}
+          <ul>
+            {% for item in site.data.settings.social %}
+            <li>
+              <a href="{{ item.url }}">
+                <i class="fa {{ item.icon }} social-icon {{ item.color }}" aria-hidden="true"></i>
+              </a>
+            </li>{% endfor %}
+          </ul>
         </div>
       </div>
       <div class="col-md-6 p-0">

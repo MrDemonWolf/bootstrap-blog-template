@@ -11,13 +11,18 @@
     .social {
         text-align: right;
 
+        li {
+            display: flex;
+            float: right;
+        }
+
         .social-icon {
-            width: 40px;
-            height: 40px;
-            font-size: 24px;
+            @extend .social-icon;
+
+            background-color: transparent;
+            padding-top: 0px;
+            border-radius: 0px;
             margin-right: 10px;
-            padding-top: 8px;
-            border-radius: 50%;
         }
     }
 
@@ -36,25 +41,14 @@
     }
 }
 
-.social-icon-about {
-    @extend .social-icon;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    margin-right: 10px;
-    padding-top: 8px;
-    border-radius: 50%;
-}
 @media (max-width: 991px) {
-  .about {
-    .social {
-      text-align: center;
+    .about {
+        .social {
+            text-align: center;
+        }
 
+        .links {
+            text-align: center;
+        }
     }
-    .links {
-      text-align: center;
-    }
-  }
 }
