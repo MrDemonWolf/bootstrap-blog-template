@@ -1,8 +1,9 @@
 <div class="landing" id="landing">
   <div class="container">
     <div class="row">
-        {% for post in site.posts limit:4 sort %}
-        <div class="landing-posts">
+      {% for post in site.posts limit:4 sort %}
+      <div class="landing-posts">
+        <div class="inner">
           <a href="{{ site.url}}{{ site.baseurl }}{{ post.url }}">
             <div class="title">{{ post.title }}</div>
           </a>
@@ -11,8 +12,8 @@
             {% include landing_post-meta.html %}
           </div>
         </div>
-        {% endfor %}
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>

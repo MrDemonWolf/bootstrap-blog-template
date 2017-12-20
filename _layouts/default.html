@@ -124,22 +124,31 @@
   })
 </script>
 <!-- Footer -->
-<div id="footer">
-  <footer>
-    <!-- Legal Infos -->
+<div class="footer effect">
+  <div class="items">
     <div class="container">
-      <div class="col-md-12 text-right">
-        <div class="footer-legal">
-          <a href="{{ site.url }}{{ site.baseurl }}/legal/privacy-statement/">Privacy Statement</a> -
-          <a href="{{ site.url }}{{ site.baseurl }}/legal/terms-of-service/">Terms of Service</a>
+      <div class="col-md-6">
+        <div class="link-list">
+          <ul>
+            <li>
+              <a href="">Test</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!-- Footer copyright with auto update year. -->
-    <div class="copyright">
+      <div class="col-md-6">
+        <div class="link-list">
+          <ul>
+            <li>
+              <a href="">Test</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer copyright with auto update year. -->
       <div class="container">
         <div class="col-md-6 col-sm-12">
-          <div class="footer-copyright"> Copyright ©
+          <div class="copyright"> Copyright ©
             <script>
               document.write("" + new Date().getFullYear());
             </script>
@@ -147,18 +156,9 @@
             <span>, All rights reserved</span>
           </div>
         </div>
-        <div class="col-md-4 col-md-offset-2 col-sm-12 footer-social ">
-          <ul>{% for item in site.data.settings.social %}
-            <li>
-              <a href="{{ item.url }}">
-                <i class="fa {{ item.icon }} social-icon {{ item.color }}" aria-hidden="true"></i>
-              </a>
-            </li>{% endfor %}
-          </ul>
-        </div>
       </div>
     </div>
-  </footer>
+  </div>
 </div>
 <!-- Loadidng JS -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
