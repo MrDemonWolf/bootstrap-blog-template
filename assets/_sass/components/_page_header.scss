@@ -4,7 +4,8 @@
 .page_header {
     text-align: center;
     color: white;
-    // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    background-image: url(../images/hero_bg.png);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     background-size: cover;
     height: 100%;
     padding-top: 8px;

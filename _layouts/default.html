@@ -123,6 +123,7 @@
     json: '{{ site.url }}{{ site.baseurl }}/search.json'
   })
 </script>
+
 <!-- Footer -->
 <div class="footer effect">
   <div class="items">
@@ -145,20 +146,19 @@
           </ul>
         </div>
       </div>
-      <!-- Footer copyright with auto update year. -->
-      <div class="container">
-        <div class="col-md-6 col-sm-12">
-          <div class="copyright"> Copyright ©
-            <script>
-              document.write("" + new Date().getFullYear());
-            </script>
-            <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
-            <span>, All rights reserved</span>
-          </div>
-        </div>
+    </div>
+    <!-- Footer copyright with auto update year. -->
+    <div class="container-fluid">
+      <div class="copyright"> Copyright ©
+        <script>
+          document.write("" + new Date().getFullYear());
+        </script>
+        <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
+        <span>, All rights reserved</span>
       </div>
     </div>
   </div>
+</div>
 </div>
 <!-- Loadidng JS -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,3 +1,7 @@
+// JS Settings
+
+var url = "https://share.mrdemonwolf.me"
+
 // Fixs the menu so when link is clicked it would close the menu.
 $(function () {
 
@@ -49,10 +53,10 @@ $(document).ready(function () {
       scroll_start = $(this).scrollTop();
       if (scroll_start > offset.top) {
         $(".navbar-default").addClass('navbar-scroll');
-        $('.navbar-desktop img').attr('src', '../assets/images/logos/logo_text_dark.png');
+        $('.navbar-desktop img').attr('src',  url + '/assets/images/logos/logo_text_dark.png');
       } else {
         $(".navbar-default").removeClass('navbar-scroll');
-        $('.navbar-desktop img').attr('src', '../assets/images/logos/logo_text_light.png');
+        $('.navbar-desktop img').attr('src',  url + '/assets/images/logos/logo_text_light.png');
       }
     });
   }
