@@ -1,26 +1,34 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the blank component.
 // -----------------------------------------------------------------------------
-.read-time {
-    display: inline;
-
-    .time {
+.post-meta {
+    .read-time {
         display: inline;
-    }
 
-    .text {
-        display: inline;
-    }
-}
-
-.post-tags {
-    display: inline;
-    a {
-        color: $label-tag-text;
-        text-decoration: none;
-
-        &:hover {
-            color: $label-tag-text_hover;
+        .time {
+            display: inline;
         }
+
+        .text {
+            display: inline;
+        }
+    }
+
+    .post-tags {
+        display: inline;
+
+        a {
+            color: $label-tag-text;
+            text-decoration: none;
+
+            &:hover {
+                color: $label-tag-text_hover;
+            }
+        }
+    }
+
+    .meta-icons {
+        color: $brand-color;
+        font-size: 1.5em;
     }
 }
