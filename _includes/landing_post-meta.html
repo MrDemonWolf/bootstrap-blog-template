@@ -2,19 +2,19 @@
   <div class="row">
     <div class="col-md-3">
       <i class="fa fa-calendar meta-icons"></i>
-      <time datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%b %d, %Y" }}</time>
+      <time class="meta-text" datetime="{{ post.date | date:" %Y-%m-%d " }}">{{ post.date | date:"%b %d, %Y" }}</time>
     </div>
     {%if post.comments %}
     <div class="col-md-3">
       <i class="fa fa-comments meta-icons"></i>
       <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread">
-        <span class="disqus-comment-count comments" data-disqus-url="{{ site.url }}{{ site.baseurl }}{{ post.url}}">No Comments</span>
+        <span class="disqus-comment-count meta-text" data-disqus-url="{{ site.url }}{{ site.baseurl }}{{ post.url}}">No Comments</span>
       </a>
     </div>
     {% endif %}
     <div class="col-md-3">
       <i class="fa fa-clock-o meta-icons"></i>
-      <div class="read-time">
+      <div class="read-time meta-text">
         <span class="read-time time">
           {% capture words %} {{ post.content | number_of_words | minus: 250 }} {% endcapture %} {% unless words contains "-" %} {{
           words | plus: 250 | divided_by: 180 }} {% endunless %}
@@ -26,13 +26,12 @@
 
     </div>
     <div class="col-md-3">
-      <i class="fa fa-tags meta-icons">
+      <i class="fa fa-tags meta-icons"></i>
         <div class="post-tags">
           {% for tag in post.tags limit:4 sort %}
-          <a href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a>
+          <a class="meta-text" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a>
           {% endfor %}
         </div>
-      </i>
     </div>
   </div>
 </div>
