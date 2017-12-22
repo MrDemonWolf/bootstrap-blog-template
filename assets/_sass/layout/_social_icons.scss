@@ -73,6 +73,16 @@
     }
 }
 
+.rss-color {
+    color: $rss-color;
+
+    &:hover {
+        color: darken($rss-color, 10%);
+        transition: all 3s;
+    }
+}
+
+
 /* Background */
 .twitter-color_background {
     background-color: $twitter-color;
@@ -135,5 +145,13 @@
 
     &:hover {
         background-color: darken($linkedin-color, 10%);
+    }
+}
+
+.rss-color_background {
+    background-color: $rss-color;
+
+    &:hover {
+        background-color: darken($rss-color, 10%);
     }
 }

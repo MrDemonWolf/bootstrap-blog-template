@@ -4,7 +4,7 @@
 # Menu Section
 
 menu:
-- {title: Home, url: '#'}
+- {title: Home, url: ''}
 - {title: Categories, url: 'categories'}
 - {title: Tags, url: 'tags'}
 - {title: Contact, url: '#contact'}
@@ -23,8 +23,8 @@ about:
   text: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
   # Limit of two links
   links:
-    - {url: 'https://mrdemonwolf.me', title: My personal site}
-    - {url: 'https://mrdemonwolf.me', title: My personal site}
+    - {url: 'https://www.example.com/', title: Your site}
+    - {url: 'http://www.example.com/', title: Your site}
 
 #-------------------------------
 # SEO Section
@@ -52,14 +52,22 @@ modified-date: September 25, 2017
 #-------------------------------
 # Footer Section
 
-footer-links-1:
-- {title: Home, url: '#'}
-- {title: Categories, url: 'categories'}
-- {title: Tags, url: 'tags'}
-- {title: Contact, url: '#contact'}
+footer-left:
+  header: Sitemap
+  links:
+   - {title: Home, url: ''}
+   - {title: Categories, url: 'categories'}
+   - {title: Tags, url: 'tags'}
+   - {title: Contact, url: '#contact'}
 
-footer-links-2:
-  - {url: legal/terms-of-service/ , title: Terms of Service}
-  - {url: legal/privacy-statement/ , title: Privacy Statement}
+footer-right:
+  header: Legal
+  links:
+   - {url: legal/terms-of-service/ , title: Terms of Service}
+   - {url: legal/privacy-statement/ , title: Privacy Statement}
+
+footer-rss:
+  url:
+  title:
 
 #-------------------------------

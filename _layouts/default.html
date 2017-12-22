@@ -129,8 +129,11 @@
   <div class="items">
     <div class="container">
       <div class="col-md-6">
-        <div class="link-list">
-          <ul class="list-unstyled">{% for item in site.data.settings.footer-links-1 %}
+        <div class="header">
+          {{ site.data.settings.footer-left.header }}
+        </div>
+        <div class="link-list left">
+          <ul class="list-unstyled">{% for item in site.data.settings.footer-left.links %}
             <li>
               <a class="links" href="{{ item.url }}">{{ item.title }}</a>
             </li>{% endfor %}
@@ -138,14 +141,18 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="link-list">
-          <ul class="list-unstyled">{% for item in site.data.settings.footer-links-2 %}
+        <div class="header">
+          {{ site.data.settings.footer-right.header }}
+        </div>
+        <div class="link-list right">
+          <ul class="list-unstyled">{% for item in site.data.settings.footer-right.links %}
             <li>
               <a class="links" href="{{ item.url }}">{{ item.title }}</a>
             </li>{% endfor %}
           </ul>
           <ul class="list-unstyled">
             <li>
+              <i class="fas fa-rss rss-color"></i>
               <a class="links" href="{{ site.url }}{{ site.baseurl }}/feed.xml"> RSS Feed</a>
             </li>
           </ul>

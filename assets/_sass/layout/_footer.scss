@@ -31,8 +31,11 @@
     }
 
     .link-list {
-        text-align: center;
-
+      .header {
+        font-family: $main-font;
+        color: $brand-color;
+        font-size: 1.5em;
+      }
         .links {
             font-size: 1.25em;
             font-family: $second-font;
@@ -41,6 +44,28 @@
             &:hover {
                 color: darken(#ffffff, 0.5);
                 text-decoration: none;
+            }
+        }
+
+        &.left {
+            li {
+                padding-top: $footer-link_padding;
+                padding-bottom: $footer-link_padding;
+                text-align: right;
+                padding-right: 8px;
+            }
+        }
+
+        &.right {
+            li {
+                padding-top: $footer-link_padding;
+                padding-bottom: $footer-link_padding;
+                text-align: left;
+                padding-left: 8px;
+            }
+
+            .rss-color {
+                font-size: 1.15em;
             }
         }
     }
