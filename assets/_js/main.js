@@ -1,6 +1,6 @@
 // JS Settings
 
-var url = "https://share.mrdemonwolf.me"
+var url = "http://localhost:4000"
 
 // Fixs the menu so when link is clicked it would close the menu.
 $(function () {

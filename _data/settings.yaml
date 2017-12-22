@@ -50,3 +50,16 @@ social:
 modified-date: September 25, 2017
 
 #-------------------------------
+# Footer Section
+
+footer-links-1:
+- {title: Home, url: '#'}
+- {title: Categories, url: 'categories'}
+- {title: Tags, url: 'tags'}
+- {title: Contact, url: '#contact'}
+
+footer-links-2:
+  - {url: legal/terms-of-service/ , title: Terms of Service}
+  - {url: legal/privacy-statement/ , title: Privacy Statement}
+
+#-------------------------------

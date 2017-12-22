@@ -49,7 +49,7 @@
 
   <!-- Frameworks -->
   <!-- Font Awsome-->
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/font-awesome/css/fontawesome-all.min.css">
   <!--Bootstrap -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/lib/bootstrap/css/bootstrap.min.css">
   <!-- EU Cookie -->
@@ -130,18 +130,23 @@
     <div class="container">
       <div class="col-md-6">
         <div class="link-list">
-          <ul>
+          <ul class="list-unstyled">{% for item in site.data.settings.footer-links-1 %}
             <li>
-              <a href="">Test</a>
-            </li>
+              <a class="links" href="{{ item.url }}">{{ item.title }}</a>
+            </li>{% endfor %}
           </ul>
         </div>
       </div>
       <div class="col-md-6">
         <div class="link-list">
-          <ul>
+          <ul class="list-unstyled">{% for item in site.data.settings.footer-links-2 %}
             <li>
-              <a href="">Test</a>
+              <a class="links" href="{{ item.url }}">{{ item.title }}</a>
+            </li>{% endfor %}
+          </ul>
+          <ul class="list-unstyled">
+            <li>
+              <a class="links" href="{{ site.url }}{{ site.baseurl }}/feed.xml"> RSS Feed</a>
             </li>
           </ul>
         </div>

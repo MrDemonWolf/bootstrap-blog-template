@@ -29,6 +29,21 @@
     .items {
         padding-top: 50px;
     }
+
+    .link-list {
+        text-align: center;
+
+        .links {
+            font-size: 1.25em;
+            font-family: $second-font;
+            color: #ffffff;
+
+            &:hover {
+                color: darken(#ffffff, 0.5);
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .social-icon {
