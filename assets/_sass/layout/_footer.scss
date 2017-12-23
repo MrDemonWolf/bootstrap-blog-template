@@ -30,12 +30,21 @@
         padding-top: 50px;
     }
 
-    .link-list {
-      .header {
+    .header {
         font-family: $main-font;
-        color: $brand-color;
+        color: $brand-color-alt;
         font-size: 1.5em;
-      }
+
+        &.left {
+            text-align: right;
+        }
+
+        &.right {
+            text-align: left;
+        }
+    }
+
+    .link-list {
         .links {
             font-size: 1.25em;
             font-family: $second-font;
@@ -49,19 +58,19 @@
 
         &.left {
             li {
-                padding-top: $footer-link_padding;
-                padding-bottom: $footer-link_padding;
                 text-align: right;
-                padding-right: 8px;
+                padding-top: $footer-link_padding;
+                padding-right: $footer-link_padding;
+                padding-bottom: $footer-link_padding;
             }
         }
 
         &.right {
             li {
+                text-align: left;
                 padding-top: $footer-link_padding;
                 padding-bottom: $footer-link_padding;
-                text-align: left;
-                padding-left: 8px;
+                padding-left: $footer-link_padding;
             }
 
             .rss-color {
