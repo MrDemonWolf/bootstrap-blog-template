@@ -1,0 +1,23 @@
+  <div class="profile-pic">
+  </div>
+  <div class="social_links">
+    <div class="social">
+      <ul>
+        {% for item in site.data.settings.social %}
+        <li>
+          <a href="{{ item.url }}">
+            <i class="fab {{ item.icon }} social-icon {{ item.color }}" aria-hidden="true"></i>
+          </a>
+        </li>{% endfor %}
+      </ul>
+    </div>
+    <div class="website_links">
+      <div class="links">
+        {% for item in site.data.settings.about.links %}
+        <a href="{{ item.url}}">{{ item.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero component.
+// -----------------------------------------------------------------------------
+.post-sidebar {
+    .profile-pic {
+        img {
+            background-color: #ffffff;
+            border-radius: 100%;
+            border: 4px solid $brand-color;
+            width: 175px;
+            height: 175px;
+        }
+    }
+
+    .social_links {
+        &:hover {}
+    }
+
+    .websites_links {
+        &:hover {}
+    }
+}

@@ -13,9 +13,9 @@
 # you will see them access via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the template via {{ site.myvariable }}.
-title: "MrDemonWolf Boilerplate"
+title: "Jekyll Bootstrap Blog"
 email: your-email@domain.com
-description: Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Browserify, Imagemin, Browsersync, PostCSS etc.
+description: Quick starter project for Jekyll Blog including full setup for gulp, Sass, Autoprefixer, Browserify, Imagemin, Browsersync, PostCSS etc. Designed based on bootstrap and FA.
 baseurl: "/jekyllrb-bootstrap-blog-template" # the subpath of your site, e.g. /blog
 url: "https://mrdemonwolf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: mrdemonwolf

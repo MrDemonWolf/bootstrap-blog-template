@@ -31,8 +31,13 @@
         color: $brand-color;
         font-size: 1.5em;
     }
+
     .meta-text {
-      font-family:$second-font;
-      font-size: 1em;
+        font-family: $second-font;
+        font-size: 1em;
+    }
+
+    .author {
+        display: inline;
     }
 }
