@@ -1,8 +1,17 @@
 <div class="profile-pic">
   <img class="center-block" src="{{ site.url }}{{ site.baseurl }}/assets/images/illustration.png" alt="{{ site.data.setting.name}} Illustration">
 </div>
-<div class="social_links">
-  <div class="social">
+<div class="col-md-12">
+  <div class="website_links">
+    <div class="links">
+      {% for item in site.data.settings.about.links %}
+      <a href="{{ item.url}}">{{ item.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="col-md-12">
+  <div class="social_links">
     <ul>
       {% for item in site.data.settings.social %}
       <li>
@@ -11,12 +20,5 @@
         </a>
       </li>{% endfor %}
     </ul>
-  </div>
-  <div class="website_links">
-    <div class="links">
-      {% for item in site.data.settings.about.links %}
-      <a href="{{ item.url}}">{{ item.title }}</a>
-      {% endfor %}
-    </div>
   </div>
 </div>

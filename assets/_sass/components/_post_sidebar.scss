@@ -13,10 +13,25 @@
     }
 
     .social_links {
-        &:hover {}
+        text-align: center;
+
+        li {
+            display: flex;
+            float: right;
+        }
+
+        .social-icon {
+            @extend .social-icon;
+
+            background-color: transparent;
+            padding-top: 0px;
+            border-radius: 0px;
+            margin-right: 10px;
+        }
     }
 
     .websites_links {
+      text-align: center;
         &:hover {}
     }
 }

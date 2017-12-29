@@ -20,12 +20,22 @@
         font-size: 1.15em;
     }
 
+    .other-links_disabled {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .social {
         text-align: right;
 
-        li {
-            display: flex;
-            float: right;
+        ul {
+            padding-left: 1em;
+
+            li {
+                display: flex;
+                float: right;
+            }
         }
 
         .social-icon {

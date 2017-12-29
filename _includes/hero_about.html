@@ -9,7 +9,7 @@
   </div>
   <div class="row">
     <div class="col-centered">
-      <div class="col-md-6 col-sm-12 p-0">
+      <div class="col-md-6 col-sm-12 p-0  {% if site.data.settings.about.other-links == false %} other-links_disabled {% endif %}">
         <div class="social">
           <ul>
             {% for item in site.data.settings.social %}
@@ -20,14 +20,14 @@
             </li>{% endfor %}
           </ul>
         </div>
-      </div>
+      </div>{% if site.data.settings.about.other-links %}
       <div class="col-md-6 col-sm-12 p-0">
         <div class="links">
           {% for item in site.data.settings.about.links %}
           <a href="{{ item.url}}">{{ item.title }}</a>
           {% endfor %}
         </div>
-      </div>
+      </div>{% endif %}
     </div>
   </div>
 </div>
