@@ -20,6 +20,19 @@ baseurl: "/jekyllrb-bootstrap-blog-template" # the subpath of your site, e.g. /b
 url: "https://mrdemonwolf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: mrdemonwolf
 
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: "/post/:category/:year/:title"
+
 # Build settings
 markdown: kramdown
 permalink: pretty # Enabled pretty urls /test/ other then test.html
