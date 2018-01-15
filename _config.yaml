@@ -19,7 +19,6 @@ description: Quick starter project for Jekyll Blog including full setup for gulp
 baseurl: "/jekyllrb-bootstrap-blog-template" # the subpath of your site, e.g. /blog
 url: "https://mrdemonwolf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: mrdemonwolf
-
 defaults:
   -
     scope:
@@ -31,14 +30,22 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: "/post/:category/:year/:title"
+      permalink: "post/:year/:title"
+pagination:
+  enabled: true
+  collection: 'posts'
+  title: ':title - page :num'
+  permalink: '/post/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
 
 # Build settings
 markdown: kramdown
-permalink: pretty # Enabled pretty urls /test/ other then test.html
+permalink: pretty # Enabled pretty urls /test/ other thgemen test.html
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
 exclude:
   - Gemfile

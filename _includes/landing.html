@@ -1,7 +1,7 @@
 <div class="landing" id="landing">
   <div class="container">
     <div class="row">
-      {% for post in site.posts limit:4 sort %}
+      {% for post in paginator.posts %}
       <div class="landing-posts">
         <div class="inner">
           <a href="{{ site.url}}{{ site.baseurl }}{{ post.url }}">
