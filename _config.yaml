@@ -30,7 +30,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: "post/:year/:title"
+      permalink: "post/:year/:title/"
 pagination:
   enabled: true
   collection: 'posts'
