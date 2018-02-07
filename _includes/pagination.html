@@ -1,45 +1,35 @@
-<!-- Pagination links
-{% if paginator.total_pages > 1 %}
-<ul>
-  {% if paginator.previous_page %}
-  <li>
-    <a href="}">Newer</a>
-  </li>
-  {% endif %} {% if paginator.next_page %}
-  <li>
-    <a href=">Older</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %} -->
-{% if paginator.total_pages > 1 %}
-<ul class="pagination">
-  <!-- Previous Page button -->
-  <li>
+<div id="pagination">
+  {% if paginator.total_pages > 1 %}
+  <ul class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.previous_page_path }}">&laquo; Previous</a>
+    <li>
+      <a href="{{ site.subpath }}{{ paginator.previous_page_path }}">&laquo; Previous</a>
+    </li>
     {% else %}
-    <span>
-      &laquo; Previous
-    </span>
+    <li class="disabled">
+      <a>&laquo; Previous</a>
+    </li>
+    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
+    <li class="active">
+      <a>{{ page | pnumber }}</a>
+    </li>
+    {% elsif page == 1 %}
+    <li>
+      <a href="{{ site.subpath }}/">{{ page | pnumber }}</a>
+    </li>
+    {% else %}
+    <li>
+      <a href="{{ site.subpath }}{{ site.pagination.permalink | replace: ':num', page }}">{{ page | pnumber }}</a>
+    </li>
+    {% endif %} {% endfor %} {% if paginator.next_page %}
+    <li>
+      <a href="{{ site.subpath }}{{ paginator.next_page_path }}">Next &raquo;</a>
+    </li>
+    {% else %}
+    <li class="disabled">
+      <a>Next &raquo;</a>
+    </li>
     {% endif %}
-  </li>
-  {% for page in (1..paginator.total_pages) %}
-  {% if page == paginator.page %}
-  {% elsif page == 1 %}
-  <li class="active">
-    <span>{{ page }}
-      <span class="sr-only">(current)</span>
-    </span>
-  </li>
-  {% else %}
-    <a href="{{ site.url }}{{ site.baseurl}}{{ site.paginate_path | replace: ':num', page }}"> {{ page }}</a>
-  </li>
-   {% endif %}
-   {% endfor %}
-  <!-- Next Page button -->
-  <li>
-    <a href="{{ site.url }}{{ site.baseurl }}{{ paginator.next_page_path }}">&raquo;Next</a>
-  </li>
-</ul>
-{% endif %}
+  </ul>
+  {% endif %}
+</div>
