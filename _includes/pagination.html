@@ -15,7 +15,7 @@
     </li>
     {% elsif page == 1 %}
     <li>
-      <a href="{{ site.subpath }}">{{ page | pnumber }}</a>
+      <a href="{{ site.subpath }}/">{{ page | pnumber }}</a>
     </li>
     {% else %}
     <li>
@@ -23,7 +23,7 @@
     </li>
     {% endif %} {% endfor %} {% if paginator.next_page %}
     <li>
-      <a href="{[ site.subpath}}{{ paginator.next_page_path }}">Next &raquo;</a>
+      <a href="{{ site.subpath }}{{ paginator.next_page_path }}">Next &raquo;</a>
     </li>
     {% else %}
     <li class="disabled">
