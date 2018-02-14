@@ -4,14 +4,14 @@ title: Categories
 header_text: Categories
 <!-- header_image: https://dummyimage.com/600x400/000/fff -->
 ---
-{% include nav_page.html %}
+{% include nav.html %}
 {% include page_header.html %}
 <div class="container">
   <div class="col-md-12">
     {% for tag in site.tags %}
     <div class="tags">
       <span class="">
-        <a href="{{ site.url }}{{ site.baseurl}}/{{ tag[0] }}">{{ tag[0] }}</a>
+        <a href="{{ site.subpath }}/{{ tag[0] }}">{{ tag[0] }}</a>
       </span>
     </div>
     {% endfor %}

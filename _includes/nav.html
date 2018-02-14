@@ -14,17 +14,17 @@
         </div>
       </button>
       <a class="navbar-brand navbar-desktop navbar-logo logo-desktop" href="/">
-        <img alt="{{ site.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/images//logos/logo_text_light.png">
+        <img alt="{{ site.title }}" src="{{ site.subpath }}/assets/images/logos/logo_text_light.png">
       </a>
       <a class="navbar-brand navbar-logo logo-mobile" href="/">
-        <img alt="{{ site.title }}" src="{{ site.url }}{{ site.baseurl }}/assets/images/logos/logo.png">
+        <img alt="{{ site.title }}" src="{{ site.subpath }}/assets/images/logos/logo.png">
       </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">{% for item in site.data.settings.menu %}
         <li>
-          <a href="{{ site.url }}{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a>
+          <a href="{{ site.subpath }}{{ item.url }}">{{ item.title }}</a>
         </li>{% endfor %}
       </ul>
     </div>

@@ -4,7 +4,7 @@
       {% for post in paginator.posts %}
       <div class="landing-posts">
         <div class="inner">
-          <a href="{{ site.url}}{{ site.baseurl }}{{ post.url }}">
+          <a href="{{ site.subpath }}{{ post.url }}">
             <div class="title">{{ post.title }}</div>
           </a>
           <div class="excerpt">{{ post.excerpt }}</div>

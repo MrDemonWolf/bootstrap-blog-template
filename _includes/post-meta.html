@@ -8,8 +8,8 @@
       {%if page.comments %}
       <div class="col-md-3">
         <i class="fas fa-comments meta-icons"></i>
-        <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#disqus_thread">
-          <span class="disqus-comment-count meta-text" data-disqus-url="{{ site.url }}{{ site.baseurl }}{{ page.url}}">No Comments</span>
+        <a href="{{ site.subpath }}{{ page.url }}#disqus_thread">
+          <span class="disqus-comment-count meta-text" data-disqus-url="{{ site.subpath }}{{ page.url}}">No Comments</span>
         </a>
       </div>
       {% endif %}
@@ -17,7 +17,7 @@
         <i class="fas fa-tags meta-icons"></i>
         <div class="post-tags">
           {% for tag in page.tags limit:4 sort %}
-          <a class="meta-text" href="{{ site.url }}{{ site.baseurl }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a>
+          <a class="meta-text" href="{{ site.subpath }}/tags/#{{ tag | uri_escape }}">{{ tag }}</a>
           {% endfor %}
         </div>
       </div>
