@@ -89,8 +89,14 @@
       "name": "{{ site.title}}",
       "mainEntityOfPage": "{{ site.subpath }}/",
       "url": "{{ site.subpath }}/",
-      "sameAs": [{% for item in site.data.settings.social %}
-      "{{ item.url }}"{% if forloop.last == false %},{% endif %}{% endfor %}
+      "sameAs": [{ %
+          for item in site.data.settings.social %
+        }
+        "{{ item.url }}" { %
+          if forloop.last == false %
+        }, { % endif %
+        } { % endfor %
+        }
       ],
       "email": "{{ site.email }}",
       "logo": "{{ site.subpath }}/assets/logos/logo.png"
@@ -138,7 +144,7 @@
 <div class="footer effect">
   <div class="items">
     <div class="container">
-      <div class="col-md-6">
+      <div class="col-xs-6 col-md-6 col-xg-6">
         <div class="header left">
           {{ site.data.settings.footer-left.header }}
         </div>
@@ -150,7 +156,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-xs-6 col-md-6 col-xg-6">
         <div class="header right">
           {{ site.data.settings.footer-right.header }}
         </div>

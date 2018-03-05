@@ -16,3 +16,10 @@
       padding-top: 25px;
     }
 }
+@media (min-height: 750px) {
+  .landing-post {
+    .inner {
+      padding: 10px;
+    }
+  }
+}

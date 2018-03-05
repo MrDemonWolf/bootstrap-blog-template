@@ -32,14 +32,17 @@
 
     .header {
         font-family: $main-font;
+        font-weight: 700;
         color: $brand-color-alt;
         font-size: 1.5em;
 
         &.left {
+            font-family: $second-font;
             text-align: right;
         }
 
         &.right {
+            font-family: $second-font;
             text-align: left;
         }
     }

@@ -4,9 +4,9 @@
 # Menu Section
 
 menu:
-- {title: Home, url: ''}
-- {title: Categories, url: 'categories'}
-- {title: Tags, url: 'tags'}
+- {title: Home, url: '/'}
+- {title: Categories, url: '/categories'}
+- {title: Tags, url: '/tags'}
 - {title: Contact, url: '/contact'}
 
 #-------------------------------
@@ -38,6 +38,7 @@ seo:
 #-------------------------------
 # Social Icons and URls
 # Icons supported are Twitter, Twitch, Spotify, Github, YouTube, Linkin, and Google Plus
+
 social:
 - {name: , icon: 'fa-twitter', color: 'twitter-color', url: 'https://www.twitter.com'}
 - {name: , icon: 'fa-twitch', color: 'twitch-color', url: 'https://www.twitch.tv'}
@@ -67,7 +68,7 @@ footer-right:
    - {url: legal/privacy-statement/ , title: Privacy Statement, enabled: true}
 
 footer-rss:
-  url:
-  title:
+  url: feed.xml
+  title: Subscribe via RSS
 
 #-------------------------------
