@@ -1,7 +1,7 @@
 #-------------------------------
 # General Site Settings
 #-------------------------------
-# Menu Section
+# Menu section
 
 menu:
 - {title: Home, url: '/'}
@@ -10,13 +10,13 @@ menu:
 - {title: Contact, url: '/contact'}
 
 #-------------------------------
-# Disqus Section
+# Disqus section
 # Must have comments: true to enable comments on post.
 
 disqus: mrdemonwolf-local
 
 #-------------------------------
-# About Section
+# About section
 author: John Doe
 about:
   text: Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
@@ -27,7 +27,7 @@ about:
     - {url: 'http://www.example.com/', title: Your site}
 
 #-------------------------------
-# SEO Section
+# SEO section
 
 seo:
   twitter-creator: '@example'
@@ -36,8 +36,8 @@ seo:
   google-analytics: UA-xxxx-1
 
 #-------------------------------
-# Social Icons and URls
-# Icons supported are Twitter, Twitch, Spotify, Github, YouTube, Linkin, and Google Plus
+# Social icons and URls
+# Icons supported are Twitter, Twitch, Spotify, Github, YouTube, Linkedin, and Google Plus
 
 social:
 - {name: , icon: 'fa-twitter', color: 'twitter-color', url: 'https://www.twitter.com'}
@@ -51,7 +51,7 @@ social:
 modified-date: September 25, 2017
 
 #-------------------------------
-# Footer Section
+# Footer section
 
 footer-left:
   header: Sitemap
@@ -68,6 +68,7 @@ footer-right:
    - {url: legal/privacy-statement/ , title: Privacy Statement, enabled: true}
 
 footer-rss:
+  enabled: true
   url: feed.xml
   title: Subscribe via RSS
 
