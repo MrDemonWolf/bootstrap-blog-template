@@ -16,10 +16,18 @@
       padding-top: 25px;
     }
 }
-@media (min-height: 750px) {
+@media (min-width:  1094px) {
+  .landing-post {
+    .inner {
+      padding: 40px;
+    }
+  }
+}
+@media (min-width: 750px) {
   .landing-post {
     .inner {
       padding: 10px;
     }
   }
+
 }
