@@ -4,24 +4,22 @@
 Open "assets/sass/abstracts/_variables.scss" fle.
 
 What obtains you may want to change
-
+#### Footer Text
 ```scss
-// Footer Text
 $footer-color: #ffffff;
 $footer-color_link: #f2f2f2;
 $footer-background: #5b599c;
 $footer-link_padding: 8px;
 ```
-
+#### Brand Color
 ```scss
-// Brand Color
 $brand-color: #323149;
 $brand-color-alt: #c9c8e6;
 $brand-color-alt-2: #5b599c;
 ```
 
-````scss
-// Navbar
+#### Navbar
+```scss
 $nav-bgDefault: transparent;
 $nav-bgHighlight: transparent;
 $nav-colDefault: #ffffff;
@@ -31,24 +29,24 @@ $nav-bgScroll: #ffffff;
 $nav-bgScroll-Hightlight: #ffffff;
 $nav-colScroll: #323149;
 $nav-colScroll-Hightlight: #262555;
-````
+```
 
-````scss
-// illustration
-$illustration-bg: #015274;
-````
-
+#### Illustration
 ```scss
-// Buttons
+$illustration-bg: #015274;
+```
+
+#### Buttons
+```scss
 $button_background_effect_font: #ffffff;
 $button_background_effect: #00709f;
 ```
 
-````scss
-// Label Tags
+### Label tags
+```scss
 $label-tag-text: #015274;
 $label-tag-text_hover: #0093ce;
-````
+```
 
 ### Site Config
 All site settings are in "/_data/settings.yaml"
@@ -79,7 +77,7 @@ menu:
 3. Fill in the info it asks for.
 4. Make sure you copy the __unique disqus URL__ and save it for later.
 
-In Disqus section in the settings.yamml paste the __unique disqus URL__
+In Disqus section in the settings.ymml paste the __unique disqus URL__
 
 ####  About
 
@@ -120,10 +118,10 @@ Here is where you can put your social media links.
 What is currently supported by this template is __Twitter__ , __Twitch__ , __Spotify__ , __Github__ , __YouTube__ , __Linkedin__ , __Google Plus__
 
 Example
-````yaml
+```yaml
 social:
 - {name: , icon: 'fa-twitter', color: 'twitter-color', url: 'https://www.twitter.com'}
-````
+```
 
 #### Modified Date
 

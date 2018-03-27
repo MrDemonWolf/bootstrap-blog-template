@@ -67,9 +67,6 @@ footer-right:
    - {url: legal/terms-of-service/ , title: Terms of Service, enabled: true}
    - {url: legal/privacy-statement/ , title: Privacy Statement, enabled: true}
 
-footer-rss:
-  enabled: true
-  url: feed.xml
-  title: Subscribe via RSS
+`
 
 #-------------------------------
