@@ -4,21 +4,21 @@
 Open "assets/sass/abstracts/_variables.scss" fle.
 
 What obtains you may want to change
-#### Footer Text
+##### Footer Text
 ```scss
 $footer-color: #ffffff;
 $footer-color_link: #f2f2f2;
 $footer-background: #5b599c;
 $footer-link_padding: 8px;
 ```
-#### Brand Color
+##### Brand Color
 ```scss
 $brand-color: #323149;
 $brand-color-alt: #c9c8e6;
 $brand-color-alt-2: #5b599c;
 ```
 
-#### Navbar
+##### Navbar
 ```scss
 $nav-bgDefault: transparent;
 $nav-bgHighlight: transparent;
@@ -31,18 +31,18 @@ $nav-colScroll: #323149;
 $nav-colScroll-Hightlight: #262555;
 ```
 
-#### Illustration
+##### Illustration
 ```scss
 $illustration-bg: #015274;
 ```
 
-#### Buttons
+##### Buttons
 ```scss
 $button_background_effect_font: #ffffff;
 $button_background_effect: #00709f;
 ```
 
-### Label tags
+##### Label tags
 ```scss
 $label-tag-text: #015274;
 $label-tag-text_hover: #0093ce;
