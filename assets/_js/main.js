@@ -26,7 +26,7 @@ $(function () {
 
 // Navbar Effect
 $(document).ready(function () {
-  var scroll_start = 0;
+  var scroll_start = -100;
   var startchange = $('#scroll_navbar');
   var offset = startchange.offset();
   if (startchange.length) {
