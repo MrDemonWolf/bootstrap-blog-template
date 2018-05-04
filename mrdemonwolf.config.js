@@ -3,30 +3,22 @@ module.exports = {
 
   tasks: {
     imagemin: true,
-    sass:     true,
-    server:   true,
-    webpack:  true,
+    sass: true,
+    server: true,
+    webpack: true,
   },
 
   paths: {
-    dest:       "_site",
-    posts:      "_posts",
-    assets:     "./assets",
-    css:        "css",
-    js:         "js",
-    images:     "images",
-    sass:       "_sass",
-    jsSrc:      "_js",
-    imagesSrc:  "_images",
+    dest: "./",
+    assets: "./assets",
+    css: "css",
+    js: "js",
+    images: "images",
+    sass: "_sass",
+    jsSrc: "_js",
+    imagesSrc: "_images",
   },
 
-  jekyll: {
-    config: {
-      default:      "_config.yaml",
-      development:  "_config_development.yaml",
-      production:   "_config.yaml",
-    }
-  },
 
   sass: {
     outputStyle: "compressed",

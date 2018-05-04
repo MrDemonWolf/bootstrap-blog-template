@@ -137,7 +137,7 @@ The left of the fotoer settings
 
 Example
 ```yaml
-footer-left:`
+footer-left:
   header: Sitemap
   links:
    - {title: Home, url: ''}

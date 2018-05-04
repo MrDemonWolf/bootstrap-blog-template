@@ -7,7 +7,6 @@
 var argv = require('yargs').argv;
 var autoprefixer = require('autoprefixer');
 var browserync = require('browser-sync').create();
-var cp = require('child_process');
 var eslint = require('gulp-eslint');
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
@@ -20,8 +19,6 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var webpack = require('webpack-stream')
-
-var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
 // Load the configuration & set variables
 var config = require('./mrdemonwolf.config.js');
@@ -63,32 +60,17 @@ for (var i = 0; i <= config.js.entry.length - 1; i++) {
 }
 
 /**
- * Build the Jekyll Site
+ * Rebuild site & do page reload
  */
-
-gulp.task('jekyll-build', function (done) {
-  var jekyllConfig = config.jekyll.config.default;
-  if (argv.production) {
-    process.env.JEKYLL_ENV = 'production';
-    jekyllConfig += config.jekyll.config.production ? ',' + config.jekyll.config.production : '';
-  } else {
-    jekyllConfig += config.jekyll.config.development ? ',' + config.jekyll.config.development : '';
-  }
-  return cp.spawn(jekyll, ['build', '--config', jekyllConfig], { stdio: 'inherit', env: process.env })
-    .on('close', done);
-});
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-  browserync.notify('Rebuilded Jekyll');
+gulp.task('site-rebuild', function () {
+  browserync.notify('Rebuilded site');
   browserync.reload();
 });
 
 /**
- * Wait for jekyll-build, then launch the Server
+ * Wait for site-build, then launch the Server
  */
-gulp.task('server', ['jekyll-build'], function () {
+gulp.task('server', function () {
   return browserync.init({
     port: config.port,
     server: {
@@ -102,7 +84,9 @@ gulp.task('server', ['jekyll-build'], function () {
  */
 gulp.task('sass', function () {
   return gulp.src(paths.sass + '/**/*')
-    .pipe(sass({ outputStyle: config.sass.outputStyle }).on('error', sass.logError))
+    .pipe(sass({
+      outputStyle: config.sass.outputStyle
+    }).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer({
         browsers: config.autoprefixer.browsers
@@ -120,7 +104,9 @@ gulp.task('imagemin', function () {
     .pipe(newer(paths.images))
     .pipe(imagemin({
       progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
       use: [pngquant()]
     }))
     .pipe(gulp.dest(paths.images));
@@ -160,23 +146,9 @@ gulp.task('_webpack', function () {
   gulp.start('webpack');
 });
 
-/**
- * Build
- */
-gulp.task('build', build, function (done) {
-  var jekyllConfig = config.jekyll.config.default;
-  if (argv.production) {
-    process.env.JEKYLL_ENV = 'production';
-    jekyllConfig += config.jekyll.config.production ? ',' + config.jekyll.config.production : '';
-  } else {
-    jekyllConfig += config.jekyll.config.development ? ',' + config.jekyll.config.development : '';
-  }
-  return cp.spawn(jekyll, ['build', '--config', jekyllConfig], { stdio: 'inherit', env: process.env })
-    .on('close', done);
-});
 
 /**
- * Default task, running just `gulp` will minify the images, compile the sass, js, and jekyll site
+ * Default task, running just `gulp` will minify the images, compile the sass, js, and site
  * launch BrowserSync, and watch files. Tasks can be configured by mrdemonwolf.config.js
  */
 gulp.task('default', tasks, function () {
@@ -196,18 +168,13 @@ gulp.task('default', tasks, function () {
     watch([
       '!./node_modules/**/*',
       '!./README.md',
-      '!./' + config.paths.dest + '/**/*',
-      '_includes/**/*',
-      '_layouts/**/*',
+      '*/*.html',
       '*.html',
-      './**/*.md',
-      './**/*.markdown',
-      paths.posts + '/**/*',
       paths.css + '/**/*',
       paths.js + '/**/*',
       paths.images + '/**/*'
     ], function () {
-      gulp.start('jekyll-rebuild');
+      gulp.start('site-rebuild');
     });
   }
 });
@@ -215,4 +182,4 @@ gulp.task('default', tasks, function () {
 /**
  * Test
  */
-gulp.task('test', ['build']);
+gulp.task('test', ['site-rebuild']);
