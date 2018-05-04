@@ -73,6 +73,7 @@ gulp.task('site-rebuild', function () {
 gulp.task('server', function () {
   return browserync.init({
     port: config.port,
+    open: false,
     server: {
       baseDir: config.paths.dest,
     }

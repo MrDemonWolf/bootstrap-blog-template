@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the landing posts component.
+// -----------------------------------------------------------------------------
+.landing-posts {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 75%;
+    margin: 0 auto;
+
+    .inner {
+        padding: 50px;
+        box-shadow: 0px 9px 50px -22px rgba(0, 0, 0, 0.68);
+        border: 1px solid $brand-color;
+    }
+    .landing-post-meta {
+      padding-top: 25px;
+    }
+}
+@media (min-width:  1094px) {
+  .landing-post {
+    .inner {
+      padding: 40px;
+    }
+  }
+}
+@media (min-width: 750px) {
+  .landing-post {
+    .inner {
+      padding: 10px;
+    }
+  }
+
+}

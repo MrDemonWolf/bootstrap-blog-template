@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the landing page.
+// -----------------------------------------------------------------------------
+.landing {
+    .container {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+.landing-posts {
+    .title {
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 1.15em;
+        color:$brand-color;
+        &:hover {
+          text-decoration: none;
+          color: $brand-color-alt
+        }
+    }
+}
