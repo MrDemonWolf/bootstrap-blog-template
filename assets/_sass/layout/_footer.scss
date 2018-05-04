@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
-.footer {
+footer {
     background-color: $footer-background;
 
     .copyright {
@@ -22,7 +22,7 @@
         }
     }
 
-    &.effect {
+    .footer-effect {
         clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
     }
 
@@ -81,6 +81,16 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        .copyright {
+            text-align: center;
+
+            span {
+                display: none;
+            }
+        }
+    }
 }
 
 .social-icon {
@@ -92,16 +102,4 @@
     margin-right: 10px;
     padding-top: 8px;
     border-radius: 50%;
-}
-
-@media (max-width: 768px) {
-    .footer {
-        .copyright {
-            text-align: center;
-
-            span {
-                display: none;
-            }
-        }
-    }
 }

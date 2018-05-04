@@ -2,7 +2,8 @@
 // This file contains all styles related to the about component.
 // -----------------------------------------------------------------------------
 .about {
-  margin-top: 100px;
+    margin-top: 100px;
+
     .name, .text {
         color: #000000;
         width: 40%;
@@ -56,10 +57,14 @@
             display: inline-block;
         }
     }
-}
 
-@media (max-width: 991px) {
-    .about {
+    @media (max-width: 1000px) {
+        .text {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 767px) {
         .social {
             text-align: center;
         }

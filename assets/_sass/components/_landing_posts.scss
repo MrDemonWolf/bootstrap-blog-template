@@ -4,7 +4,7 @@
 .landing-posts {
     padding-bottom: 25px;
     padding-top: 25px;
-    width: 75%;
+    width: 75% ;
     margin: 0 auto;
 
     .inner {
@@ -23,11 +23,18 @@
     }
   }
 }
+@media (min-width: 576px) {
+  .landing-post {
+    .inner {
+      padding: 10px;
+    }
+  }
+}
 @media (min-width: 750px) {
   .landing-post {
     .inner {
       padding: 10px;
     }
   }
-
 }
+

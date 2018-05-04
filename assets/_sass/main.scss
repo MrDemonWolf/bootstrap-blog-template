@@ -1,43 +1,43 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 // 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins';
+
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
 
 // 2. Vender
 //
 
 // 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/helpers";
 
 // 4. Layout-related sections
-@import
-  'layout/header',
-  'layout/footer',
-  'layout/social_icons';
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/social_icons";
 
 // 5. Components
-@import
-  'components/post-meta',
-  'components/tags',
-  'components/blank',
-  'components/hero',
-  'components/page_header',
-  'components/post_sidebar',
-  'components/landing_posts',
-  'components/about';
+
+@import "components/post-meta";
+@import "components/tags";
+@import "components/blank";
+@import "components/hero";
+@import "components/page_header";
+@import "components/post_sidebar";
+@import "components/landing_posts";
+@import "components/about";
 
 // 6. Page-specific styles
-@import
-  'pages/legal',
-  'pages/landing';
+
+@import "pages/legal";
+@import "pages/landing";
 
 // 7. Themes
-@import
-  'themes/default';
+
+@import "themes/default";
