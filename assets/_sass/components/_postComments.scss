@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the comments component.
+// -----------------------------------------------------------------------------
+.comments {
+  .header {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  span {
+    .login, .signup {
+      color: $brand-color;
+      &:hover {
+        color: $brand-color-alt;
+      }
+    }
+  }
+}
