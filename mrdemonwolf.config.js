@@ -21,7 +21,7 @@ module.exports = {
 
 
   sass: {
-    outputStyle: "compressed",
+    outputStyle: "expanded",
   },
 
   autoprefixer: {

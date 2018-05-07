@@ -37,10 +37,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="scroll_navbar">
     <div class="container">
-      <a class="navbar-brand navbar-desktop navbar-logo logo-desktop" href="/">
+      <a class="navbar-brand navbar-desktop navbar-logo logo-desktop" href="/bootstrap-blog-template/">
         <img alt="Jekyll Bootstrap Blog" src="/bootstrap-blog-template/assets/images/logos/logo_text_light.png">
       </a>
-      <a class="navbar-brand navbar-logo logo-mobile" href="/">
+      <a class="navbar-brand navbar-logo logo-mobile" href="/bootstrap-blog-template/">
         <img alt="Jekyll Bootstrap Blog" src="/bootstrap-blog-template/assets/images/logos/logo.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -57,9 +57,6 @@
             <a class="nav-link" href="/bootstrap-blog-template/categories.html">Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/bootstrap-blog-template/tags.html">Tags</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="/bootstrap-blog-template/contact.html">Contact</a>
           </li>
       </div>
@@ -67,7 +64,7 @@
   </nav>
   <!-- Post header -->
   <div class="page_header">
-    <div style="background-image: url(/bootstrap-blog-template/assets/images/posts/test-post-1.png); background-size: cover; clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);">
+    <div style="background-image: url(/assets/images/posts/test-post-1.png); background-size: cover; clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);">
       <div class="container">
         <div class="row">
           <div class="inner m-auto">
@@ -81,28 +78,19 @@
     <div class="container">
       <div class="post-meta">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <i class="far fa-calendar meta-icons"></i>
             <time class="meta-text" datetime=" 2016-01-01 ">Jan 01, 2016</time>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <i class="fas fa-comments meta-icons"></i>
-            <a href="/bootstrap-blog-template/post/2016/test-post-kappa/#disqus_thread">
-              <span class="disqus-comment-count meta-text" data-disqus-url="/bootstrap-blog-template/post/2016/test-post-kappa/">No Comments</span>
+            <a href="#comments">
+              <span class="meta-text">No Comments</span>
             </a>
           </div>
-          <div class="col-md-3">
-            <i class="fas fa-tags meta-icons"></i>
-            <div class="post-tags">
-              <a class="meta-text" href="/bootstrap-blog-template/tags/#web">web</a>
-              <a class="meta-text" href="/bootstrap-blog-template/tags/#jekyll">jekyll</a>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <i class="fas fa-user"></i>
-            <div class="author">
-              John Doe
-            </div>
+          <div class="col-md-4">
+            <i class="fas fa-clock meta-icons"></i>
+            <span class="reading-tim">10 mins to read</span>
           </div>
         </div>
       </div>
@@ -175,11 +163,12 @@
                 <a href="http://www.example.com/">Your site</a>
               </div>
             </div>
+            <div class="author text-center">Joe Doe</div>
             <div class="social_links">
-              <ul>
+              <ul class="pl-0">
                 <li>
                   <a href="https://www.twitter.com">
-                    <i class="fab fa-twitter social-icon twitter-color" aria-hidden="true"></i>
+                    <i class="fab fa-twitter social-icon twitter-color last" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
@@ -291,16 +280,16 @@
           <div class="link-list left">
             <ul class="list-unstyled">
               <li>
-                <a class="links" href="/bootstrap-blog-template/">Home</a>
+                <a class="links" href="">Home</a>
               </li>
               <li>
-                <a class="links" href="/bootstrap-blog-template/categories">Categories</a>
+                <a class="links" href="categories">Categories</a>
               </li>
               <li>
-                <a class="links" href="/bootstrap-blog-template/tags">Tags</a>
+                <a class="links" href="tags">Tags</a>
               </li>
               <li>
-                <a class="links" href="/bootstrap-blog-template/contact">Contact</a>
+                <a class="links" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -312,10 +301,10 @@
           <div class="link-list right">
             <ul class="list-unstyled">
               <li>
-                <a class="links" href="/bootstrap-blog-template/legal/#terms-of-service">Terms of Service</a>
+                <a class="links" href="legal/#terms-of-service">Terms of Service</a>
               </li>
               <li>
-                <a class="links" href="/bootstrap-blog-template/legal/#privacy-statement">Privacy Statement</a>
+                <a class="links" href="legal/#privacy-statement">Privacy Statement</a>
               </li>
             </ul>
             <ul class="list-unstyled">
@@ -325,14 +314,12 @@
               </li>
             </ul>
           </div>
-          <div>
-          </div>
         </div>
         <!-- Footer copyright with auto update year. -->
         <div class="container-fluid">
           <div class="copyright"> Copyright ©
             <script>
-              document.write("" + new Date().getFullYear());
+              document.write(new Date().getFullYear());
 
             </script>
             <a href="/bootstrap-blog-template/">Bootstrap Blog</a>

@@ -4,14 +4,7 @@
   "description": "bootstrap-blog-template",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "test": "gulp test",
-    "build": "gulp build --production",
-    "imagemin": "gulp imagemin",
-    "production": "gulp --production",
-    "sass": "gulp sass",
-    "server": "gulp server",
-    "server-production": "gulp server --production"
+    "start": "gulp"
   },
   "author": "MrDemonWolf",
   "license": "MIT",
