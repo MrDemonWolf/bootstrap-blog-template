@@ -2,79 +2,66 @@
 // This file contains all styles related to the about component.
 // -----------------------------------------------------------------------------
 .about {
-    margin-top: 100px;
-
-    .name, .text {
-        color: #000000;
-        width: 40%;
-        margin: 0 auto;
+  margin-top: 100px;
+  .name,
+  .text {
+    color: #000000;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .name {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: $brand-color;
+  }
+  .text {
+    font-family: $second-font;
+    font-size: 1.15em;
+    margin-bottom: 25px;
+  }
+  .other-links_disabled {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .social {
+    text-align: right;
+    a {
+      text-decoration: none;
     }
-
-    .name {
-        font-family: $main-font;
-        font-weight: 700;
-        font-size: 1.5em;
-        color: $brand-color;
-    }
-
-    .text {
-        font-family: $second-font;
-        font-size: 1.15em;
-    }
-
-    .other-links_disabled {
-        width: 100%;
+    ul {
+      padding-left: 1em;
+      li {
         display: flex;
-        justify-content: center;
+        float: right;
+      }
     }
-
+    .social-icon {
+      @extend .social-icon;
+      background-color: transparent;
+      padding-top: 0px;
+      border-radius: 0px;
+      margin-right: 10px;
+    }
+  }
+  .links {
+    text-align: left;
+    a {
+      display: inline-block;
+    }
+  }
+  @media (max-width: 1000px) {
+    .text {
+      width: 60%;
+    }
+  }
+  @media (max-width: 767px) {
     .social {
-        text-align: right;
-
-        a {
-            text-decoration: none;
-        }
-
-        ul {
-            padding-left: 1em;
-
-            li {
-                display: flex;
-                float: right;
-            }
-        }
-
-        .social-icon {
-            @extend .social-icon;
-
-            background-color: transparent;
-            padding-top: 0px;
-            border-radius: 0px;
-            margin-right: 10px;
-        }
+      text-align: center;
     }
-
     .links {
-        text-align: left;
-
-        a {
-            display: inline-block;
-        }
+      text-align: center;
     }
-
-    @media (max-width: 1000px) {
-        .text {
-            width: 60%;
-        }
-    }
-
-    @media (max-width: 767px) {
-        .social {
-            text-align: center;
-        }
-
-        .links {
-            text-align: center;
-        }
-    }
+  }
 }

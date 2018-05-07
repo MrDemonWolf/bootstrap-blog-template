@@ -12,8 +12,16 @@
         }
     }
 
+    .author {
+        font-family: $main-font;
+        font-size: 3em;
+        font-weight: 700;
+    }
+
     .social_links {
         text-align: center;
+        display: flex;
+        justify-content: center;
 
         li {
             display: flex;
@@ -28,10 +36,15 @@
             border-radius: 0px;
             margin-right: 10px;
         }
+
+        .last {
+            margin-right: 0px;
+        }
     }
 
     .websites_links {
-      text-align: center;
+        text-align: center;
+
         &:hover {}
     }
 }

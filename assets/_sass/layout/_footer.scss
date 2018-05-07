@@ -57,6 +57,9 @@ footer {
                 color: darken(#ffffff, 0.5);
                 text-decoration: none;
             }
+            &.active {
+              color: $brand-color-alt;
+            }
         }
 
         &.left {
