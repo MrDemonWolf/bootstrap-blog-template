@@ -1,0 +1,15 @@
+.categories {
+    .letter {
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 1.15em;
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        .name {
+            font-size: 1em;
+            font-weight: normal;
+            font-family: $second-font;
+        }
+    }
+}

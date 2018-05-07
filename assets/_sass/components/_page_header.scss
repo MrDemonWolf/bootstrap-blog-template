@@ -5,6 +5,7 @@
     color: white;
     height: 100%;
     margin: 0px;
+
     .inner {
         background-color: transparent !important;
         padding-top: 125PX;
@@ -16,5 +17,10 @@
             font-weight: 700;
             font-size: 2em;
         }
+    }
+
+    .background {
+        background-color: $brand-color-alt-2;
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
 }
