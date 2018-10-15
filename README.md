@@ -10,8 +10,6 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/MrDemonWolf/bootstrap-blog-templater/master/LICENSE)
 [![Build Status](https://travis-ci.org/MrDemonWolf/bootstrap-blog-template.svg?branch=dev)](https://travis-ci.org/MrDemonWolf/bootstrap-blog-template)
-[![dependencies Status](https://david-dm.org/MrDemonWolf/bootstrap-blog-template/status.svg)](https://david-dm.org/MrDemonWolf/bootstrap-blog-template)
-[![devDependencies Status](https://david-dm.org/MrDemonWolf/bootstrap-blog-template/dev-status.svg)](https://david-dm.org/MrDemonWolf/bootstrap-blog-template?type=dev)
 
 ## Download and Installation
 
