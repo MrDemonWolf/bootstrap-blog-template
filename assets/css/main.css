@@ -1005,6 +1005,10 @@ footer .link-list.right .rss-color {
   color: #c9c8e6;
 }
 
+.landing-posts .post-tags {
+  display: inline;
+}
+
 .post .post-meta {
   margin-top: 32px;
   margin-bottom: 32px;

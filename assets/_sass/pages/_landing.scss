@@ -13,10 +13,15 @@
         font-family: $main-font;
         font-weight: 700;
         font-size: 1.15em;
-        color:$brand-color;
+        color: $brand-color;
+
         &:hover {
-          text-decoration: none;
-          color: $brand-color-alt
+            text-decoration: none;
+            color: $brand-color-alt;
         }
+    }
+
+    .post-tags {
+        display: inline;
     }
 }
