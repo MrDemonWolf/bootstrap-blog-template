@@ -9,7 +9,7 @@
   "author": "MrDemonWolf",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^9.3.1",
     "browser-sync": "^2.18.13",
     "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
